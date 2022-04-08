@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prancipal</title>
+    <!-- pour la font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <!-- associer avec le fichier css -->
+    <link rel="stylesheet" href="../Css/style.css" />
+    <link rel="stylesheet" href="../Css/contact.css" />
+    <!-- pour l'icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <!-- -->
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Bj-Team</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="searcher.html">researchers</a></li>
+        <li><a href="article.html">Article</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="login" href="logReg.html">Login / Register</a></li>
+      </ul>
+    </nav>
+    <div class="img4"></div>
+    <div class="big-container">
+      <div class="container">
+        <div class="text">Get in Touch</div>
+        <form action="#">
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">First Name</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">Last Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">Email Address</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">Topic</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data textarea">
+              <textarea rows="8" cols="80" required></textarea>
+              <br />
+              <div class="underline"></div>
+              <label for="">Write your message</label>
+              <!-- le button submit -->
+              <!-- <div class="form-row submit-btn">
+                <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" value="submit" />
+                </div>
+              </div> -->
+              <div class="containerB">
+                <input id="btn" type="submit" value="Submit" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

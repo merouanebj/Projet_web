@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 2000;
+}
+
+body {
+  font-family: montserrat;
+}
+nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+a.login {
+  background: #17a2b8;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1130px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 510px;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1000;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  a:hover,
+  a.login {
+    background: none;
+    background: #6b51ff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  nav {
+    position: fixed;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 1166px) {
+  label.logo {
+    padding-left: 40px;
+  }
+}
+
+.img1 {
+  background: url(../img/001.jpg) no-repeat;
+}
+.img2 {
+  background: url(../img/002.jpg) no-repeat;
+}
+.img3 {
+  background: url(../img/003.jpg) no-repeat;
+}
+.img4 {
+  background: url(../img/004.jpg) no-repeat;
+}
+.img5 {
+  background: url(../img/005.jpg) no-repeat;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+/* pour la HTML about.html */
+.container-down {
+  background: rgb(112, 28, 28);
+  width: 800px;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
