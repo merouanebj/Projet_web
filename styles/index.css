@@ -80,22 +80,25 @@ section {
   position: relative;
   width: 75px;
   height: 75px;
-  /* background: linear-gradient(
-    90deg,
-    rgba(50, 56, 8, 1) 0%,
-    rgba(92, 85, 69, 1) 46%,
-    rgba(120, 138, 51, 1) 100%
-  ); */
   left: 50%;
   transform: translate(-50%);
   border-radius: 40px;
   cursor: pointer;
   margin-top: -35px;
   align-items: center;
-  background-image: url(./../assets/svg/down.svg);
   background-size: cover;
   border: 3px double #000;
   background-color: #efefef;
+}
+/*pour enlever le default style de a */
+.go-down svg path {
+  color: #000;
+}
+.go-down:hover,
+.go-down:hover svg path {
+  border: 3px double #fff;
+  color: #efefef;
+  background-color: #000;
 }
 
 .welcome-sec {

@@ -21,9 +21,6 @@
 }
 
 .article-container [icon] {
-  position: relative;
-  left: 40%;
-  transform: translate(-50%);
   width: 80px;
   height: 80px;
 }
