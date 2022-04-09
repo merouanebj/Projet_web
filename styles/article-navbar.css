@@ -1,0 +1,51 @@
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #000;
+}
+header ul {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+header li {
+  position: relative;
+  margin-bottom: 5px;
+  width: 30px;
+}
+header li::after,
+header li::before {
+  --scale: 0;
+  position: absolute;
+  left: 120%;
+  background: black;
+  border-radius: 4px;
+  transform: translateY(-5%) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: left center;
+}
+header li::before {
+  content: attr(data-tooltip);
+  color: #fff;
+  padding: 0.5rem;
+  width: max-content;
+}
+
+header li:hover::after,
+header li:hover::before {
+  --scale: 1;
+}
+header li::after {
+  --scale: 0;
+  content: "";
+  /* width: 10px;
+  height: 10px; */
+  background: transparent;
+  border: 10px solid transparent;
+  border-right-color: black;
+  transform: translate(-100%, 20%) scale(var(--scale));
+  transform-origin: right center;
+}

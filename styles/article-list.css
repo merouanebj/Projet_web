@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.article-container {
+  display: flex;
+}
+form input {
+  border: 0;
+  background: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+form input:hover {
+  background-color: aquamarine;
+}
+
+aside .searchbox {
+  display: flex;
+}
