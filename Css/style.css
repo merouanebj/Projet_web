@@ -162,7 +162,8 @@ a.login {
 }
 
 .down-container {
-  background: #98cbf2;
+  display: flex;
+  background: #ebefee;
   height: 400px;
   width: 90%;
   margin: 1% 5%;
@@ -178,8 +179,14 @@ a.login {
   max-height: 400px;
   text-align: center;
   background-size: cover;
-  margin: -282px 623px 45px;
+  /* margin: -282px 623px 45px; */
 }
-.img_svg {
+.img_svg1 {
   background-image: url(../img/index-discover.svg);
+  margin: 0px auto;
+}
+
+.img_svg2 {
+  background-image: url(../img/index-stats.svg);
+  margin: auto 5px;
 }
