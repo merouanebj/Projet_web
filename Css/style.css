@@ -9,7 +9,11 @@
 h1 {
   padding-top: 20px;
   text-align: center;
-  font-weight: 2000;
+  width: 427px;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 40px;
 }
 
 body {
@@ -149,10 +153,18 @@ a.login {
   height: 400px;
 }
 /* pour la HTML about.html */
+
 .container-down {
   background: rgb(112, 28, 28);
   width: 800px;
   height: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.down-container {
+  background: #98cbf2;
+  height: 400px;
+  width: 90%;
+  margin: 1% 5%;
 }
