@@ -7,11 +7,10 @@
   box-sizing: border-box;
 }
 h1 {
+  font-family: system-ui;
   padding-top: 20px;
-  text-align: center;
   width: 427px;
   font-size: 38px;
-  font-weight: 700;
   text-align: left;
   margin-left: 40px;
 }
@@ -167,4 +166,20 @@ a.login {
   height: 400px;
   width: 90%;
   margin: 1% 5%;
+}
+
+/*  */
+.img_svg_con {
+  height: 50vw;
+  width: 50vw;
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 400px;
+  max-height: 400px;
+  text-align: center;
+  background-size: cover;
+  margin: -282px 623px 45px;
+}
+.img_svg {
+  background-image: url(../img/index-discover.svg);
 }
