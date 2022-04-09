@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles content</title>
+    <link rel="stylesheet" href="./../../styles/article-list.css" />
+    <link rel="stylesheet" href="./../../styles/article-sidebar.css" />
+    <link rel="stylesheet" href="./../../styles/icon.css" />
+  </head>
+  <body>
+    <div class="article-container">
+      <div class="sidebar">
+        <div icon>
+          <img src="./../../assets/img/readwithkey.png" alt="" srcset="" />
+        </div>
+        <header>
+          <ul class="navbar">
+            <li data-tooltip="Home">
+              <a href="./articles-index.html">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-label="Home"
+                >
+                  <path
+                    d="M4.5 21.25V10.87c0-.07.04-.15.1-.2l7.25-5.43a.25.25 0 0 1 .3 0l7.25 5.44c.06.04.1.12.1.2v10.37c0 .14-.11.25-.25.25h-4.5a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 0-.25-.25h-4.5a.25.25 0 0 0-.25.25v5.5c0 .14-.11.25-.25.25h-4.5a.25.25 0 0 1-.25-.25z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M22 9l-9.1-6.83a1.5 1.5 0 0 0-1.8 0L2 9"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li data-tooltip="Notifications">
+              <a href="">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-label="Notifications"
+                >
+                  <path
+                    d="M15 18.5a3 3 0 1 1-6 0"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M5.5 10.53V9a6.5 6.5 0 0 1 13 0v1.53c0 1.42.56 2.78 1.57 3.79l.03.03c.26.26.4.6.4.97v2.93c0 .14-.11.25-.25.25H3.75a.25.25 0 0 1-.25-.25v-2.93c0-.37.14-.71.4-.97l.03-.03c1-1 1.57-2.37 1.57-3.79z"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li data-tooltip="Lists">
+              <a href="">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-label="Lists"
+                >
+                  <path
+                    d="M4.5 6.25V21c0 .2.24.32.4.2l5.45-4.09a.25.25 0 0 1 .3 0l5.45 4.09c.16.12.4 0 .4-.2V6.25a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25z"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M8 6V3.25c0-.14.11-.25.25-.25h11.5c.14 0 .25.11.25.25V16.5"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li data-tooltip="Stories">
+              <a href="">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-label="Stories"
+                >
+                  <path
+                    d="M4.75 21.5h14.5c.14 0 .25-.11.25-.25V2.75a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25v18.5c0 .14.11.25.25.25z"
+                    stroke="currentColor"
+                  ></path>
+                  <path
+                    d="M8 8.5h8M8 15.5h5M8 12h8"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li data-tooltip="Write">
+              <a href="">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-label="Write"
+                >
+                  <path
+                    d="M14 4a.5.5 0 0 0 0-1v1zm7 6a.5.5 0 0 0-1 0h1zm-7-7H4v1h10V3zM3 4v16h1V4H3zm1 17h16v-1H4v1zm17-1V10h-1v10h1zm-1 1a1 1 0 0 0 1-1h-1v1zM3 20a1 1 0 0 0 1 1v-1H3zM4 3a1 1 0 0 0-1 1h1V3z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M17.5 4.5l-8.46 8.46a.25.25 0 0 0-.06.1l-.82 2.47c-.07.2.12.38.31.31l2.47-.82a.25.25 0 0 0 .1-.06L19.5 6.5m-2-2l2.32-2.32c.1-.1.26-.1.36 0l1.64 1.64c.1.1.1.26 0 .36L19.5 6.5m-2-2l2 2"
+                    stroke="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div data-tooltip="User-profile" class="user-profile"></div>
+        </header>
+      </div>
+      <article>
+        <h2>Incidence du nombre de citations</h2>
+
+        L’impact des citations est une mesure du nombre de fois qu’un article de
+        revue académique ou un livre ou un auteur est cité par d’autres
+        articles, livres ou auteurs. Les citations sont interprétées comme des
+        mesures de l’impact ou de l’influence du travail universitaire et ont
+        donné naissance au domaine de bibliométrie ou de scientométrie,
+        spécialisée dans l’étude des modèles d’impact académique par l’analyse
+        des citations. Le rapport moyen de deux ans entre les citations et les
+        articles publiés est une mesure de l’importance des institutions dans
+        les décisions concernant la permanence académique, la promotion et
+        l’embauche, et donc également utilisé par les auteurs pour décider dans
+        quelle revue publier. Des mesures semblables à des citations sont
+        également utilisées dans d’autres domaines qui font le classement, tels
+        que l’algorithme PageRank de Google, les mesures logicielles, les
+        classements collégiaux et universitaires, et les indicateurs de
+        performance des entreprises.
+
+        <h2>Niveau article</h2>
+
+        L’une des mesures de citation les plus élémentaires est la fréquence à
+        laquelle un article a été cité dans d’autres articles, livres ou autres
+        sources (comme des thèses). Le taux de citation dépend beaucoup de la
+        discipline et du nombre de personnes qui travaillent dans ce domaine.
+        Par exemple, beaucoup plus de scientifiques travaillent en neurosciences
+        qu’en mathématiques, et les neuroscientifiques publient plus d’articles
+        que les mathématiciens, d’où les articles sur les neurosciences sont
+        beaucoup plus souvent cités que les articles en mathématiques. De même,
+        les articles de synthèse sont plus souvent cités que les articles de
+        recherche réguliers parce qu’ils résument les résultats de nombreux
+        articles. Cela peut également être la raison pour laquelle les articles
+        avec des titres plus courts obtiennent plus de citations, étant donné
+        qu’ils couvrent généralement un domaine plus large.
+
+        <h2>Articles les plus cités</h2>
+
+        Le papier le plus cité dans l’histoire est un papier par Oliver Lowry
+        décrivant un essai pour mesurer la concentration des protéines. En 2014,
+        il avait accumulé plus de 305 000 citations. Les 10 articles les plus
+        cités comptaient tous plus de 40 000 citations. Pour atteindre le
+        top-100 des articles requis 12,119 citations d’ici 2014. Sur la base de
+        données Web of Science de Thomson Reuter avec plus de 58 millions
+        d’articles, seuls 14499 articles (~0,026 %) ont reçu plus de 1000
+        citations en 2014.
+
+        <h2>Niveau journal</h2>
+
+        La mesure la plus simple au niveau des revues est le facteur d’impact
+        des revues (JIF), le nombre moyen de citations que les articles publiés
+        par une revue au cours des deux années précédentes ont reçues au cours
+        de l’année en cours, calculé par Clarivate. D’autres entreprises font
+        état de mesures similaires, comme le CiteScore (CS), basé sur Scopus.
+        Cependant, les JIF ou CS très élevés sont souvent basés sur un petit
+        nombre d’articles très cités. Par exemple, la plupart des articles de
+        Nature (facteur d’impact 38.1, 2016) n’ont été cités que 10 ou 20 fois
+        au cours de l’année de référence (voir la figure). Les revues ayant un
+        impact moindre (p. ex., PLOS ONE, facteur d’impact 3.1) publient de
+        nombreux articles qui sont cités 0 à 5 fois, mais peu d’articles
+        fortement cités. Les mesures au niveau des revues sont souvent mal
+        interprétées comme une mesure de la qualité des revues ou des articles.
+        Ils ne sont pas une mesure au niveau de l’article, d’où leur utilisation
+        pour déterminer l’impact d’un seul article est statistiquement invalide.
+        La distribution des citations est biaisée pour les revues parce qu’un
+        très petit nombre d’articles alimente la grande majorité des citations;
+        par conséquent, certaines revues ont cessé de faire connaître leur
+        facteur d’impact, p. ex., les revues de l’American Society for
+        Microbiology. Les mesures plus élaborées au niveau des revues
+        comprennent l’Eigenfactor et le SCImago Journal Rank.
+
+        <h2>Niveau auteur</h2>
+
+        Le nombre total de citations, ou le nombre moyen de citations par
+        article, peut être déclaré pour un auteur ou un chercheur. De nombreuses
+        autres mesures ont été proposées, au-delà du simple dénombrement des
+        citations, pour mieux quantifier l’impact des citations individuelles.
+        Les mesures les plus connues sont l’indice h et l’indice g. Chaque
+        mesure présente des avantages et des inconvénients, allant du biais à la
+        discipline-dépendance et aux limites de la source de données de
+        citation. Le nombre de citations par article est également utilisé pour
+        identifier les auteurs de citations classiques. Les citations sont
+        distribuées de façon très inégale entre les chercheurs. Dans une étude
+        fondée sur la base de données du Web of Science de 118 disciplines
+        scientifiques, les auteurs les plus cités représentaient 21 % de toutes
+        les citations. Entre 2000 et 2015, la proportion de citations adressées
+        à ce groupe d’élite est passée de 14 % à 21 %. Les concentrations les
+        plus élevées de chercheurs « d’élite des citations » se trouvaient aux
+        Pays-Bas, au Royaume-Uni, en Suisse et en Belgique. Il est à noter que
+        70 % des auteurs de la base de données Web of Science ont moins de 5
+        publications, de sorte que les auteurs les plus cités parmi les
+        4 millions inclus dans cette étude constituent une infime fraction.
+
+        <h2>Alternatives</h2>
+
+        Une autre approche pour mesurer l’impact d’un chercheur repose sur les
+        données d’utilisation, comme le nombre de téléchargements des éditeurs
+        et l’analyse de la performance des citations, souvent au niveau des
+        articles. Dès 2004, le BMJ a publié le nombre de points de vue pour ses
+        articles, ce qui s’est révélé quelque peu corrélé aux citations. En
+        2008, le Journal of Medical Internet Research a commencé à publier des
+        opinions et des gazouillis. Ces "tweetations" se sont avérées être un
+        bon indicateur des articles fortement cités, conduisant l’auteur à
+        proposer un "facteur Twimpact", qui est le nombre de Tweets qu’il reçoit
+        dans les sept premiers jours de publication, ainsi qu’un Twindex, qui
+        est le centile de rang du facteur Twimpact d’un article. En réponse aux
+        préoccupations croissantes au sujet de l’utilisation inappropriée des
+        facteurs d’impact des revues dans l’évaluation des résultats
+        scientifiques et des scientifiques eux-mêmes, l’Université de Montréal,
+        l’Imperial College de Londres, PLOS, eLife, EMBO Journal, La Royal
+        Society, Nature and Science a proposé des mesures de la distribution des
+        citations comme solution de rechange aux facteurs d’impact.
+
+        <h2>Publications en libre accès</h2>
+
+        Les publications en libre accès sont accessibles gratuitement aux
+        lecteurs. On s'attend donc à ce qu'elles soient citées plus fréquemment.
+        Certaines études expérimentales et d'observation ont montré que les
+        articles publiés dans des revues en libre accès ne sont pas plus cités,
+        en moyenne, que ceux publiés dans des revues payantes, alors que
+        d'autres études ont montré le contraire. La preuve que les articles OA
+        auto-archivés ("vert") sont plus cités que les articles non OA est un
+        peu plus forte que la preuve que les revues OA ("or") sont plus citées
+        que les revues non OA. Cela s'explique par le fait qu'un grand nombre
+        des revues les plus citées aujourd'hui ne sont encore que des OA
+        hybrides (l'auteur a la possibilité de payer pour l'or) et qu'un grand
+        nombre de revues OA purement payantes sont soit de mauvaise qualité,
+        soit carrément des "revues prédatrices" qui profitent de l'empressement
+        des auteurs à publier ou à périr, ce qui fait baisser le nombre moyen de
+        citations des revues OA.
+
+        <h2>Développements récents</h2>
+
+        Un développement récent important dans la recherche sur l'impact des
+        citations est la découverte de l'universalité, ou des modèles d'impact
+        des citations qui sont valables dans différentes disciplines des
+        sciences, des sciences sociales et des sciences humaines. Par exemple,
+        il a été démontré que le nombre de citations reçues par une publication,
+        une fois correctement rééchelonné par sa moyenne parmi les articles
+        publiés dans la même discipline et la même année, suit une distribution
+        log-normale universelle qui est la même dans toutes les disciplines.
+        Cette constatation a suggéré une mesure universelle de l'impact des
+        citations qui étend le h-index en redimensionnant correctement le nombre
+        de citations et en recourant à des publications, mais le calcul d'une
+        telle mesure universelle nécessite la collecte de nombreuses données et
+        statistiques sur les citations pour chaque discipline et chaque année.
+        Des outils de crowdsourcing social tels que Scholarometer ont été
+        proposés pour répondre à ce besoin. Kaur et al. ont proposé une méthode
+        statistique pour évaluer l'universalité des mesures d'impact des
+        citations, c'est-à-dire leur capacité à comparer équitablement l'impact
+        entre les domaines. Leur analyse identifie des mesures d'impact
+        universelles, telles que le h-index normalisé par champ. La recherche
+        suggère que l'impact d'un article peut être, en partie, expliqué par des
+        facteurs superficiels et pas seulement par les mérites scientifiques
+        d'un article. Les facteurs dépendants du domaine sont généralement cités
+        comme un problème à résoudre non seulement lorsque des comparaisons
+        entre disciplines sont effectuées, mais aussi lorsque différents
+        domaines de recherche d'une même discipline sont comparés. Par exemple,
+        en médecine, parmi d'autres facteurs, le nombre d'auteurs, le nombre de
+        références, la longueur de l'article et la présence de deux points dans
+        le titre influencent l'impact. En sociologie, le nombre de références,
+        la longueur de l'article et la longueur du titre font partie de ces
+        facteurs. On constate également que les chercheurs adoptent un
+        comportement éthiquement discutable afin de gonfler le nombre de
+        citations reçues par leurs articles. L'indexation automatisée des
+        citations a changé la nature de la recherche sur l'analyse des
+        citations, permettant d'analyser des millions de citations pour trouver
+        des modèles à grande échelle et découvrir des connaissances. Le premier
+        exemple d'indexation automatique des citations a été CiteSeer, suivi
+        plus tard par Google Scholar. Plus récemment, des modèles avancés pour
+        une analyse dynamique du vieillissement des citations ont été proposés.
+        Ce dernier modèle est même utilisé comme outil prédictif pour déterminer
+        les citations qui pourraient être obtenues à tout moment de la vie d'un
+        corpus de publications. Certains chercheurs proposent également que le
+        taux de citation des revues sur Wikipédia, à côté de l'indice de
+        citation traditionnel, "puisse être un bon indicateur de l'impact du
+        travail dans le domaine de la psychologie." Selon Mario Biagioli :
+        "Toute métrique d'évaluation scientifique est vouée à être abusée. La
+        loi de Goodhart stipule que lorsqu'une caractéristique de l'économie est
+        choisie comme indicateur de l'économie, alors elle cesse inexorablement
+        de fonctionner comme cet indicateur car les gens commencent à la jouer."
+      </article>
+      <aside>
+        More functionalities in the way
+        <div class="searchbox">
+          <span class="icon">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="rgba(8, 8, 8, 1)"
+            >
+              <path
+                d="M20.07 18.93l-4.16-4.15a6 6 0 1 0-.88.88l4.15 4.16a.62.62 0 1 0 .89-.89zM6.5 11a4.75 4.75 0 1 1 9.5 0 4.75 4.75 0 0 1-9.5 0z"
+              ></path>
+            </svg>
+          </span>
+          <input type="text" placeholder="Search" />
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

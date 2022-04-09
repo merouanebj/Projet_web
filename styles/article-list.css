@@ -85,3 +85,7 @@
 aside .searchbox {
   display: flex;
 }
+.article-container article {
+  margin: 59px 43px 0 -16px;
+  width: 65%;
+}
