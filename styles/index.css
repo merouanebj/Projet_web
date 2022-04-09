@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "august";
+  src: url(./../assets/fonts/August-Bold.ttf);
+}
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+  font-family: monospace;
+  overflow-x: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+  border-radius: 100vw;
+}
+/* .dark {
+
+  background-color: #000;
+} */
+/* colors for light theme 
+#fdf6e3
+palettes 2
+background #efefef
+text #a9a9a9
+palettes 3 
+back #ecf0f3
+*/
+.light {
+  background-color: #efefef;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  margin: 0 5px 0 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 50px;
+  background: transparent;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+header ul li {
+  display: inline;
+}
+header .navbar a {
+  color: #000;
+  font-size: 1.5em;
+  padding: 21px;
+  cursor: pointer;
+}
+header .navbar a:hover {
+  border-bottom: 3px solid #000;
+}
+header .navbar .list-item {
+  margin: 0 5px;
+}
+header span {
+  visibility: hidden;
+}
+section {
+  /* height: 95vh; */
+  height: 800px;
+  width: 100%;
+  z-index: -13;
+}
+.go-down {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: -35px;
+  align-items: center;
+  background-size: cover;
+  border: 3px double #000;
+  background-color: #efefef;
+}
+/*pour enlever le default style de a */
+.go-down svg path {
+  color: #000;
+}
+.go-down:hover,
+.go-down:hover svg path {
+  border: 3px double #fff;
+  color: #efefef;
+  background-color: #000;
+}
+
+.welcome-sec {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.welcome {
+  align-items: center;
+  background-image: url(./../assets/img/fontain-pen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12px;
+}
+.welcome .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  margin-top: 80px;
+  width: 30%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome .intro-text p {
+  color: #a9a9a9;
+  color: #000;
+  font-family: "august";
+  font-size: 7em;
+}
+.welcome .intro-text .rw-btns {
+  width: auto;
+  height: 60px;
+}
+.welcome .intro-img {
+  grid-area: "intro-img";
+  background-image: url(./../img/note.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60%;
+  /* width: 100px; */
+  height: 60%;
+  right: 0;
+  border-radius: 50%;
+  /* background-color: blue; */
+  /* width: 500px;
+  height: 500px; */
+}
+.welcome .intro-img img {
+  /* display: none; */
+  /* position: absolute; */
+  width: 40em;
+  height: 40em;
+  right: 0;
+  border-radius: 50%;
+}
+button {
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 150px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+button a {
+  font-size: 15px;
+  width: 150px;
+  font-weight: 700;
+  color: #000;
+}
+button:hover {
+  background-color: black;
+}
+button:hover > a {
+  color: #fff;
+}
+@media screen and (max-width: 550px) {
+  header {
+    bottom: 0;
+  }
+  header .navbar {
+    display: none;
+  }
+}

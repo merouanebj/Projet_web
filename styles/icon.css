@@ -1,0 +1,30 @@
+[icon] {
+  position: fixed;
+  margin: 12px 0 0 12px;
+  width: 100px;
+  height: 100px;
+  background-color: #efefef;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 100px;
+  z-index: 12;
+}
+[icon] img {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 50px;
+  height: 100px;
+  transform: rotateZ(334deg);
+}
+
+.article-container [icon] {
+  width: 80px;
+  height: 80px;
+}
+.article-container [icon] img {
+  width: 40px;
+  height: 80px;
+}
