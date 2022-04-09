@@ -1,3 +1,20 @@
-.article-container {
+article::before {
+  content: attr(data-title);
+  height: 70px;
+  font-size: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
+  justify-content: center;
+}
+article.content {
+  margin: 80px 43px 0 -1px;
+  font-family: "roboto";
+}
+article.content h2 {
+  margin: 12px 0;
+}
+article.content p {
+  text-indent: 30px;
+  margin: 12px 0;
 }
