@@ -71,8 +71,7 @@ header span {
   visibility: hidden;
 }
 section {
-  /* height: 95vh; */
-  height: 800px;
+  height: 95vh;
   width: 100%;
   z-index: -13;
 }
@@ -142,21 +141,23 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   width: 60%;
-  /* width: 100px; */
   height: 60%;
   right: 0;
   border-radius: 50%;
-  /* background-color: blue; */
-  /* width: 500px;
-  height: 500px; */
 }
 .welcome .intro-img img {
-  /* display: none; */
-  /* position: absolute; */
   width: 40em;
   height: 40em;
   right: 0;
   border-radius: 50%;
+}
+section.site-def {
+  display: flex;
+  flex-direction: column;
+}
+section.site-def span {
+  font-weight: bold;
+  font-size: 40px;
 }
 button {
   text-align: center;
@@ -202,10 +203,6 @@ button:hover > a {
   padding: 30px;
 }
 
-
-
-
-
 .card {
   display: block;
   margin: 15px auto;
@@ -233,7 +230,7 @@ button:hover > a {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.heading_1{
+.heading_1 {
   font-size: 42px;
-  margin-left:24px;
+  margin-left: 24px;
 }
