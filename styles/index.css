@@ -71,9 +71,10 @@ header span {
   visibility: hidden;
 }
 section {
+  display: inline-block;
   height: 95vh;
   width: 100%;
-  z-index: -13;
+  /* z-index: -13; */
 }
 .go-down {
   position: relative;
@@ -100,23 +101,18 @@ section {
   background-color: #000;
 }
 
-.welcome-sec {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-}
 .welcome {
   align-items: center;
   background-image: url(./../assets/img/fontain-pen.jpg);
-  background-size: cover;
+  background-size: 100% 95vh;
   background-repeat: no-repeat;
   padding: 12px;
 }
 .welcome .intro-text {
   position: absolute;
   left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  transform: translate(-50%, -20%);
   margin-top: 80px;
   width: 30%;
   height: 60%;
@@ -129,7 +125,7 @@ section {
   color: #a9a9a9;
   color: #000;
   font-family: "august";
-  font-size: 7em;
+  font-size: 6em;
 }
 .welcome .intro-text .rw-btns {
   width: auto;
@@ -138,7 +134,7 @@ section {
 .welcome .intro-img {
   grid-area: "intro-img";
   background-image: url(./../img/note.jpg);
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
   width: 60%;
   height: 60%;
@@ -152,12 +148,43 @@ section {
   border-radius: 50%;
 }
 section.site-def {
-  display: flex;
-  flex-direction: column;
+  margin-top: 100px;
 }
-section.site-def span {
+section.site-def > h1 {
+  text-align: center;
+  padding: 100px 12px 12px 12px;
   font-weight: bold;
   font-size: 40px;
+}
+section.site-def ul {
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+section.site-def ul li {
+  display: inline-block;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px double #000;
+}
+section.site-def ul li p {
+  display: inline-block;
+  padding: 20px;
+  font-size: 30px;
+  width: 40%;
+  text-align: center;
+  vertical-align: top;
+}
+section.site-def ul li p span {
+  background-color: #000;
+  color: #efefef;
+  border-radius: 50px;
+  padding: 4px;
+  font-weight: bolder;
+}
+section.site-def ul li img {
+  width: 40%;
 }
 button {
   text-align: center;
@@ -190,7 +217,9 @@ button:hover > a {
     display: none;
   }
 }
-
+.team-dev {
+  position: inherit;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -231,6 +260,8 @@ button:hover > a {
 }
 
 .heading_1 {
+  text-align: center;
+  padding-top: 100px;
   font-size: 42px;
   margin-left: 24px;
 }

@@ -16,11 +16,11 @@
       <ul class="navbar">
         <li>
           <span>||</span>
-          <a href="" class="list-item">Home</a>
+          <a href="#home" class="list-item">Home</a>
         </li>
         <li>
           <span>||</span>
-          <a href="" class="list-item">Services</a>
+          <a href="#site-info" class="list-item">Services</a>
         </li>
         <li>
           <span>||</span>
@@ -36,7 +36,7 @@
       </button>
     </header>
 
-    <section class="welcome">
+    <section class="welcome" id="#home">
       <div class="intro-text">
         <div class="text">
           <p>READ & WRITE</p>
@@ -47,7 +47,7 @@
           <button class="reading-btn">
             <a href="./pages/articles-index.html">Start Reading</a>
           </button>
-          <button class="writing-btn"><a href="">Start Writing</a></button>
+          <button class="writing-btn"><a href="./pages/write.html">Start Writing</a></button>
         </div>
       </div>
       <!-- <div class="intro-img"></div> -->
@@ -73,12 +73,20 @@
         </span>
       </div>
     </a>
-    <section id="site-info" class="site-def">
-      <span>How does it work</span>
-      <div><img src="./assets/img/site-description.gif" alt=""></div>
-    </section>
-    <section class="howToUse">
-      <h1>how to use this site</h1>
+    <section  class="site-def">
+      <h1 id="site-info">How does it work</h1>
+      <div>
+        <ul>
+          <li>
+            <p>You can Read articles by clicking <span>Start Reading</span> button</p>
+            <img src="./assets/img/site-description.gif" alt="">
+          </li>
+          <li>
+            <img src="./assets/img/reading.webp" alt="">
+            <p>You can Write articles by clicking <span>Start Writing</span> button</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="team" class="team-dev">
       <h1 class="heading_1">Developed BY</h1>
